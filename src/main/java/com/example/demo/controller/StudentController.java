@@ -40,7 +40,7 @@ return "Updated Success";
 }
 return "Id not found";
 }
-@DeleteMapping("/del/(id}")
+@DeleteMapping("/del/{id}")
 public String deleteStudent(@PathVariable Long id){
 Optional<Student> student=studentService.getOneStudent(id);
 if(student.isPresent()){
