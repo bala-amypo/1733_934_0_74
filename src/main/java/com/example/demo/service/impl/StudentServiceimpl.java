@@ -9,20 +9,20 @@ import com.example.demo.service.StudentService;
 @Service
 public class StudentServiceimpl implements StudentService{
     @Autowired
-    @StudentRepo
-    @override
+    private StudentRepo 
+    @Override
     public Student insertStudent(Student st){
         return StudentRepo.save(st);
     }
-    @override
+    @Override
     public List<Student> getAllStudents(){
         return StudentRepo.findAll();
     }
-    @override
+    @Override
     public Optional<Student> getOneStudent(Long id){
         return StudentRepo.findById(id);
     }
-    @override
+    @Override
     public void deleteStudent(Long id){
          StudentRepo.deleteById(id);
     }
