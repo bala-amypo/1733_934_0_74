@@ -1,7 +1,7 @@
-package com.example.demo.controller:
+package com.example.demo.controller;
 import java.util.List;
 import java.util.Ootional;
-import org.soringframework.beans.factorv.annotation. Autowired:
+import org.soringframework.beans.factorv.annotation. Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org. springframework.web.bind.annotation.GetMapping;
