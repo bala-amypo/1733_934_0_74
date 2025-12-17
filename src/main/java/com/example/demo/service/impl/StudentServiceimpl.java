@@ -11,7 +11,13 @@ public class StudentServiceimpl implements StudentService{
     @Autowired
     @StudentRepo
     @override
-    Student insertStudent(Student st){
-        public 
+    public Student insertStudent(Student st){
+        return StudentRepo.save(st);
     }
+    @override
+    public List<Student> getAllStudents(){
+        return StudentRepo.findall(st);
+    }
+    
+
 }
