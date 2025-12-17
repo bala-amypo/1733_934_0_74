@@ -23,12 +23,14 @@ return studentService.insertStudent(st);
 }
 
 @GetMapping("/getAll")
-public List<Student> getAll()E|
+public List<Student> getAll(){
 return studentService.getAllStudents();
+}
 
 @GetMapping("/get/{id}")
 public Optional<Student> get(@PathVariable Long id){
 return studentService.getOneStudent(id);
+}
 
 @PutMapping("/update/{id}")
 public String update(@PathVariable Long id,@RequestBody Student
@@ -38,7 +40,7 @@ if(student.isPresent()){
 newStudent.setId(id);
 studentService.insertStudent(newStudent);
 return "Updated Success";
-3
+
 return "Id not found";
 }
 return "Id not found";
@@ -51,5 +53,6 @@ studentService.deleteStudent(id);
 return "Deleted Success";
 }
 return "Id Not Found";
+}
 }
 
