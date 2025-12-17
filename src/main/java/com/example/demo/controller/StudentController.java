@@ -37,7 +37,6 @@ if(student.isPresent()){
 newStudent.setId(id);
 studentService.insertStudent(newStudent);
 return "Updated Success";
-return "Id not found";
 }
 return "Id not found";
 }
