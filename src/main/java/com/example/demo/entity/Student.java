@@ -18,11 +18,13 @@ public class Student {
 
 
     public Student(long id, String name, String email, LocalDate dob, float cgpa) {
-        this.id = id;
+        // this.id = id;
         this.name = name;
         this.email = email;
         this.dob = dob;
         this.cgpa = cgpa;
+    }
+    public Student(){
     }
 
     public long getId() {
