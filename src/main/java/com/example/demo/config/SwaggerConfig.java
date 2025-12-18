@@ -12,10 +12,10 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI();
         
-                // You need to change the port as per your server
-                // .servers(List.of(
-                //         new Server().url("https://9343.408procr.amypo.ai/")
-                // ));
+                You need to change the port as per your server
+                .servers(List.of(
+                        new Server().url("https://9168.408procr.amypo.ai/")
+                ));
 
         }
 }
